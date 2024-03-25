@@ -1,3 +1,1 @@
-window.onload = function() {
-    alert("Hello Javascript!");
-}
+console.log("Hello Javascript!")
