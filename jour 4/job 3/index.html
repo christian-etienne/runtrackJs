@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="filterForm">
+        <label for="id">ID:</label><br>
+        <input type="text" id="id" name="id"><br>
+        <label for="name">Nom:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="type">Type:</label><br>
+        <select id="type" name="type">
+            <!-- Vous pouvez ajouter des options ici en fonction des types de Pokemon disponibles -->
+            <option value="">Tous les types</option>
+            <option value="Fire">Feu</option>
+            <option value="Water">Eau</option>
+            <!-- etc. -->
+        </select><br>
+        <input type="button" id="filterButton" value="Filtrer">
+    </form>
+
+    <div id="results"></div>
+    <script src="script.js"></script>
+</body>
+</html>
+
