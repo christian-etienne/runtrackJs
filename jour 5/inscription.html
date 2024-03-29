@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <h1>Page d'inscription</h1>
+    <form id="form">
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required>
+        <div id="nom_error" class="error_message"></div>
+
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" name="prenom" required>
+        <div id="prenom_error" class="error_message"></div>
+
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required>
+        <div id="email_error" class="error_message"></div>
+
+        <label for="motdepasse">Mot de passe :</label>
+        <input type="password" id="motdepasse" name="motdepasse" required>
+        <div id="motdepasse_error" class="error_message"></div>
+
+        <label for="verification_motdepasse">Vérification de Mot de passe :</label>
+        <input type="password" id="verification_motdepasse" name="verification_motdepasse" required>
+        <div id="verification_motdepasse-error" class="error_message"></div>
+
+        <label for="adresse">Adresse :</label>
+        <input type="text" id="adresse" name="adresse">
+
+        <label for="codepostal">Code postal :</label>
+        <input type="text" id="codepostal" name="codepostal">
+
+        <div id="success_message"></div>
+    </form>
+    <button id="submit_btn" type="submit">S'inscrire</button>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
